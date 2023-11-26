@@ -1,0 +1,251 @@
+:root {
+
+   --dk-violet: hsl(268, 75%, 9%);
+   --lt-violet: hsl(268, 47%, 21%);
+   --lt-violet2: hsl(281, 89%, 26%);
+   --vb-violet: hsl(285, 91%, 52%);
+   --vb-violet2: hsl(290, 70%, 36%);
+ 
+   --vb-yellow: hsl(52, 100%, 62%);
+ 
+ 
+   --pl-white: hsl(0, 0%, 100%);
+ 
+   --vb-cyan: hsl(176, 100%, 44%);
+   --vb-cyan2: hsl(177, 92%, 70%);
+   --dk-text: hsl(198, 20%, 13%);
+}
+*{
+     margin:0;
+     font-family: 'League Spartan', sans-serif;
+}
+
+
+
+.wrapper{
+
+   
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(231deg, rgba(22, 6, 40, 1) 0%, rgba(52, 28, 79, 1) 50%, rgba(88, 7, 125, 1) 100%);
+   
+
+
+}
+
+
+.con1{
+
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     height:600px;
+
+
+}
+.password-length{
+
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   
+   gap: 20px;
+   
+
+
+
+}
+.indicator{
+
+
+   height: 25px;
+   width: 25px;
+   background-color: red;
+   border-radius: 50%;
+
+
+}
+.stre{
+
+  display: flex;
+  align-items: center;
+
+  gap: 100px;
+
+
+}
+.con3{
+
+
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   margin-top: 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   padding: 20px;
+   font-size: 1em;
+   box-sizing: content-box;
+   background-color: var(--dk-violet);
+   color: var(--pl-white);
+   border-radius: 1rem;
+   box-sizing: border-box;
+   width: 300px;
+
+}
+.con2{
+
+
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: var(--dk-violet);
+   margin-top: 20px;
+   padding: 10px;
+   color: var(--vb-yellow);
+    width: 280px;
+    border-radius: 1rem;
+    border-bottom: 0.35rem solid var(--lt-violet2);
+
+
+
+}
+#outputDisplay{
+
+   border: none;
+   background-color: transparent;
+   color: var(--vb-yellow);
+  
+
+}
+#outputDisplay::placeholder{
+
+    color: var(--vb-yellow);
+
+
+
+}
+  
+input:focus{
+
+     outline: none;
+}
+#copybtn{
+
+
+     border: none;
+     background-color: var(--dk-violet);
+}
+
+.generate-pass{
+
+
+     padding-left: 20px;
+     padding-right: 20px;
+     
+     background-color: var(--vb-violet);
+     border-top: none;
+     border-left: none;
+     border-right: none;
+     
+     border-radius: 0.35rem;
+     text-transform: uppercase;
+     font-weight: 900;
+
+     color: var(--vb-yellow);
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 0.35rem solid var(--vb-yellow);
+   
+
+}
+.project-heading{
+
+    color:var(--pl-white);
+    letter-spacing: 2px;
+    text-align: center;
+
+
+
+}
+.lengthnumber{
+
+
+      color: var(--vb-yellow);
+}
+
+
+.active{
+
+    color: white;
+    position: relative;
+    top: -40px;
+    left: 30px;
+
+}
+.che{
+
+   display: flex;
+   align-items: center;
+    gap: 8px;
+
+}
+.che input{
+
+   
+     appearance: none;
+     height: 14px;
+     width: 13px;
+     border: 0.1px solid var(--vb-cyan);
+     border-radius: 0.1rem;
+     position: relative;
+
+
+
+}
+.che input:checked{
+
+    background-color: var(--vb-cyan);
+
+
+
+
+}
+.che input:checked::before{
+
+   content: "✓";
+   position: absolute;
+   top: -2px;
+   bottom: 0px;
+   left: 0px;
+   right: 0px;
+   color: black;
+   font-weight: bolder;
+
+}
+#ran{
+ 
+      appearance: none;
+      border-radius: 1rem;
+      background-color: var(--vb-violet);
+      height: 0.75rem;
+
+}
+#ran::-webkit-slider-thumb{
+
+         appearance: none;
+         height: 15px;
+         width: 15px;
+         border-radius: 50%;
+         background-color: var(--vb-yellow);
+
+}
